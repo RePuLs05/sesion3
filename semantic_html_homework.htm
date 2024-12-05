@@ -3,71 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semantic HTML Practice</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Anime World</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- Header Section -->
     <header>
-        <h1>Anime World</h1>
-        <nav>
-            
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>ანიმეს სამყარო</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- Main Content Section -->
-    <main class="main-page">
-
-        <!-- First Section: Featured Anime Article -->
-        <section id="home">
-            <h2>Featured Anime: Attack on Titan</h2>
-            <article>
-                
-                <figure>
-                    <a href="https://www.etsy.com/market/attack_on_titan_poster" target="_blank"><img src="./assets/images.png" alt="Attack on Titan Poster"></a>
-                    <figcaption>The poster of Attack on Titan</figcaption>
-                </figure>
-                <p>
-                    <strong>Attack on Titan</strong> is a critically acclaimed anime series known for its gripping story, 
-                    intense action, and <em>compelling</em> characters. Set in a world where humanity is on the brink of extinction,
-                    it follows the fight against the mysterious Titans.
-                </p>
-                <p>Don’t miss out on this epic series. It’s truly a <span>masterpiece</span> of modern anime!</p>
-            </article>
-        </section>
-
-        <!-- Second Section: Additional Content -->
-        <section id="about">
-            <h2>Top Anime of All Time</h2>
-            <article>
-                <ul class="linlks">
-                    <li><a href="https://naruto.fandom.com/wiki/Naruto_Uzumaki">Naruto</a></li>
-                    <li><a href="https://www.crunchyroll.com/series/GRMG8ZQZR/one-piece?srsltid=AfmBOorgz2hA_JHZB3KzfvEbI_htKAQIgrP5cumKs9D07eWWVamVQM-6" target="_blank">One Piece</a></li>
-                    <li><a href="https://demonslayer-anime.com/" target="_blank">Demon Slayer</a></li>
-                    <li><a href="https://www.imdb.com/title/tt5626028/" target="_blank">My Hero Academia</a></li>
-                </ul>
-                <p>Discover more amazing titles and explore the diverse genres anime has to offer.</p>
-                <time datetime="2024-12-05">December 5, 2024</time>
-            </article>
-        </section>
-        <aside>
-            <p>Anime often reflects <span>Japanese culture</span>, showcasing unique art styles and storytelling techniques.</p>
+    <div class="content-wrapper">
+        <aside class="asd">
+            <p>&nbsp;&nbsp; ანიმეები განსხვავებული ჟანრების და თემების მქონე<span> იაპონური ანიმაციური სერიებია</span>, რომლებიც ხშირად აფართოებენ ადამიანურ გამოცდილებას, ემოციებს და ფანტაზიას.</p>
+            <ol>
+                <li><strong>ნარუტო</strong>  სერიალი ახალგაზრდა ნინძას შესახებ, რომელიც მთელი სიცოცხლის განმავლობაში ეძებს თავის ნიჭს და სურს
+                    , გახდეს სოფლის ლიდერი. ანიმეს მიგნებაა მიზნის მიღწევის ძალა და პიროვნული ზრდა.</li>
+                <li><strong>დემონი Slayer (Demon Slayer)</strong>  სერიალი ახალგაზრდა ბიჭზე, რომელიც ცდილობს თავისი ოჯახი დაბრუნოს და მასთან ერთად დემონებისგან ბრძოლის ძალა იძინოს.
+                     ანიმე გვიჩვენებს სიბრძნეს, თავდადებას და სიყვარულს, რომლებიც გადარჩენისთვის აუცილებელია.</li>
+             </ol>
         </aside>
+        <main class="main-page">
 
-    </main>
+            <!-- Featured Anime Section -->
+            <section id="home">
+                <div class="container">
+                    <h2>ტიტანების შეტაკება</h2>
+                    <article>
+                        <figure>
+                            <a href="https://www.etsy.com/market/attack_on_titan_poster" target="_blank">
+                                <img src="./assets/images.png" alt="Attack on Titan Poster">
+                            </a>
+                            <figcaption><strong>ტიტანების შეტევის პოსტერი</strong></figcaption>
+                        </figure>
+                        <p>
+                            <strong>"Attack on Titan" არის კრიტიკულად აღიარებული ანიმე სერიალი, რომელიც ცნობილია თავისი დამაინტრიგებელი სიუჟეტით, 
+                                ინტენსიური მოქმედებითა და ზემოქმედების </em>მქონე პერსონაჟებით</em>. 
+                                ის განლაგებულია სამყაროში, სადაც ადამიანობა გადაშენების ზღვარზეა, და მოყვება ბრძოლას ამოუცნობ ტიტანებთან.
+                            </strong>
+                        </p>
+                        <p>არ გამოტოვოთ ეს ეპიკური სერიალი. ის მართლაც არის<span class="highlight">შედევრი</span>თანამედროვე ანიმეს!</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Top Anime Section -->
+            <section id="about">
+                <div class="container">
+                    <h2>ყველა დროის სუკეთესო ანიმეები</h2>
+                    <article>
+                        <ul class="anime-links">
+                            <li>
+                                <a href="https://naruto.fandom.com/wiki/Naruto_Uzumaki" target="_blank">
+                                    <img src="./assets/nruto.jpg" alt="Naruto">
+                                    <p>Naruto</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.crunchyroll.com/series/GRMG8ZQZR/one-piece" target="_blank">
+                                    <img src="./assets/one_pice.png" alt="One Piece">
+                                    <p>One Piece</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://demonslayer-anime.com/" target="_blank">
+                                    <img src="./assets/demon_slayer.png" alt="Demon Slayer">
+                                    <p>Demon Slayer</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.imdb.com/title/tt5626028/" target="_blank">
+                                    <img src="./assets/hero.png" alt="My Hero Academia">
+                                    <p>My Hero Academia</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <p>Discover more amazing titles and explore the diverse genres anime has to offer.</p>
+                        <time datetime="2024-12-05">Published on: December 5, 2024</time>
+                    </article>
+                </div>
+            </section>
+            
+            
+        </main>
+
+        <!-- Sidebar Content -->
+        
+    </div>
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Anime World. All rights reserved.</p>
-        <address>
-            Contact us at: <a href="mailto:vaja.zoidze.05@gmail.com">may gmail</a>
-        </address>
+        <div class="container">
+            <p>&copy; 2024 Anime World. All rights reserved.</p>
+            <address>
+                Contact us at: <a href="mailto:vaja.zoidze.05@gmail.com">vaja.zoidze.05@gmail.com</a>
+            </address>
+        </div>
     </footer>
 
 </body>
